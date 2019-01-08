@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190108 15:19:11.164" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\exemplos_estudos\Robot_tests\others_test_projects\test_api_the-movie-db\test-suites\guest-session.robot" id="s1" name="Guest-Session">
+<kw type="setup" name="Connect API" library="guest-session">
+<kw name="Create Session" library="request">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>tmovie</arg>
+<arg>${URL_API}</arg>
+<arg>disable_warnings=0</arg>
+</arguments>
+<msg timestamp="20190108 15:19:11.691" level="INFO">Creating Session using : alias=tmovie, url=https://api.themoviedb.org/3/, headers={},                     cookies=None, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" endtime="20190108 15:19:11.691" starttime="20190108 15:19:11.691"></status>
+</kw>
+<status status="PASS" endtime="20190108 15:19:11.691" starttime="20190108 15:19:11.691"></status>
+</kw>
+<test id="s1-t1" name="Scenario 01: List all movies upcoming as a guest">
+<kw name="Given I connect as a guest" library="guest-session">
+<kw name="Get Request" library="request">
+<doc>Send a GET request on the session object found using the</doc>
+<arguments>
+<arg>alias=tmovie</arg>
+<arg>uri=authentication/guest_session/new?api_key=1f54bd990f1cdfb230adb312546d765d</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20190108 15:19:13.256" level="INFO">Get Request using : alias=tmovie, uri=authentication/guest_session/new?api_key=1f54bd990f1cdfb230adb312546d765d, headers=None json=None</msg>
+<msg timestamp="20190108 15:19:13.256" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20190108 15:19:13.256" starttime="20190108 15:19:11.691"></status>
+</kw>
+<kw name="Log" library="std">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${response.json()}</arg>
+</arguments>
+<msg timestamp="20190108 15:19:13.257" level="INFO">{u'expires_at': u'2019-01-09 17:19:12 UTC', u'success': True, u'guest_session_id': u'b0b98159cf0a1334e8585973ce6b9267'}</msg>
+<status status="PASS" endtime="20190108 15:19:13.257" starttime="20190108 15:19:13.256"></status>
+</kw>
+<status status="PASS" endtime="20190108 15:19:13.258" starttime="20190108 15:19:11.691"></status>
+</kw>
+<status status="PASS" endtime="20190108 15:19:13.262" critical="yes" starttime="20190108 15:19:11.691"></status>
+</test>
+<kw type="teardown" name="Disconnect API" library="guest-session">
+<kw name="Delete All Sessions" library="request">
+<doc>Removes all the session objects</doc>
+<msg timestamp="20190108 15:19:13.266" level="INFO">Delete All Sessions</msg>
+<status status="PASS" endtime="20190108 15:19:13.266" starttime="20190108 15:19:13.265"></status>
+</kw>
+<status status="PASS" endtime="20190108 15:19:13.266" starttime="20190108 15:19:13.265"></status>
+</kw>
+<doc>Testing access to API "The Movie Database" as a guest.</doc>
+<status status="PASS" endtime="20190108 15:19:13.266" starttime="20190108 15:19:11.179"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Guest-Session" pass="1">Guest-Session</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
