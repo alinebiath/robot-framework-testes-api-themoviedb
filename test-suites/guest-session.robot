@@ -11,7 +11,7 @@ Suite Teardown    Disconnect API
 
 Scenario 01: List all movies upcoming as a guest
     Given I connect as a guest
-    # When I request rated movies
+    When I request rated movies
     # Then I should see one list with rated movies
 
 
