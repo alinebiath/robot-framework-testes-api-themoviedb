@@ -33,8 +33,3 @@ Scenario 04: Getting account details
     When I consult account details
     Then response status should be              401                                                                          Unauthorized
     And I receive a status_message              Authentication failed: You do not have permissions to access the service.
-
-
-
-
-
