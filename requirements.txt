@@ -1,0 +1,5 @@
+# Required libraries to run automated test properly.
+requests
+robotframework
+robotframework-requests
+
