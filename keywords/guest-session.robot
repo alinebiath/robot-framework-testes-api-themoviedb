@@ -1,12 +1,11 @@
 *** Settings ***
 
-Resource        libraries.robot
+Resource       libraries.robot
 
 *** Variables ***
 
-${URL_API}=     https://api.themoviedb.org/3
-&{HEADERS}=     content-type=application/json               charset=utf-8
-# &{PARAMS}=    api_key=c51f9deb0e83b37f5db774c5f239a34a    sort_by=created_at.asc
+${URL_API}=    https://api.themoviedb.org/3
+&{HEADERS}=    content-type=application/json    charset=utf-8
 
 
 *** Keywords ***
