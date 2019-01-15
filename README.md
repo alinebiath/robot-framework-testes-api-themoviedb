@@ -1,4 +1,4 @@
-# test_api_the_movie_db
+# Automated tests for API "TheMovieDb" with Robot Framework.
 
 # Setup
 # Installing required libraries.
