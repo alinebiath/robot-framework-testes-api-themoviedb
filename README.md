@@ -1,10 +1,10 @@
-# Automated tests for API "TheMovieDb" with Robot Framework.
+# Automated tests for "TheMovieDb" API with Robot Framework.
 
-# Setup
-# Installing required libraries.
+Setup
+Installing required libraries.
 
-# Windows
+Windows
 
 
-# Linux / Mac
+Linux / Mac
 sudo pip install -r requirements.txt
