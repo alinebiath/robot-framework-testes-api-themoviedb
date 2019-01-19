@@ -1,6 +1,6 @@
 # Automated tests for "TheMovieDb" API with Robot Framework.
 
-**Setup** </br>
+**Setup** </br></br>
 **Installing required libraries** </br>
 
 Windows
