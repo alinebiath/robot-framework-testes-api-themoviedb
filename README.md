@@ -3,7 +3,8 @@
 - It is necessary to register a user and the application according to documentation.
 - The application register will generate an api_key, required to perform all API requests.
 
-**Pre-conditions**
+**Pre-conditions for the tests**
+- Get api_key by registering for the API
 - Install Python 2.7.15
 - An ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc)
 
