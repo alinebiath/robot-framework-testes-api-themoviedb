@@ -3,11 +3,11 @@
 - It is necessary to register a user and the application according to documentation.
 - The application register will generate an api_key, required to perform all API requests.
 
-**Pre-conditions**</br>
-- Install Python 2.7.15</br>
-- An ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc).</br>
+**Pre-conditions**
+- Install Python 2.7.15
+- An ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc)
 
-**Installing required Python libraries** </br>
+**Installing required Python libraries** 
 
 Windows
 pip install -r requirements.txt </br>
