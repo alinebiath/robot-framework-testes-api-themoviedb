@@ -4,7 +4,6 @@
 - The application register will generate an api_key, required to perform all API requests.
 
 **Pre-conditions for the tests**
-<hr>
 - Get api_key by registering for the API
 - Clone the project
 - Install Python 2.7.15
