@@ -27,3 +27,16 @@ Execute at the terminal the command below. Note that you must replace the <b>"yo
 $ robot --variable VALID_API_KEY:your_api_key -d output ./test-suites/guest-session.robot
 ```
 For more details on running tests in Robot Framework and their options see more: http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#executing-test-cases
+
+### Gererating documentation
+Generate reports of your scenarios or users keywords with Robot.
+
+The following command generates the documentation of the user keywords in the output directory (or another of your preference):
+```sh
+$ python -m robot.libdoc keywords/guest-session.robot output/user-keywords-documentation.html
+```
+The following command generates the documentation of the scenarios in the output directory (or another of your preference):
+```sh
+$ python -m robot.testdoc test-suites/guest-session.robot output/test-suite-documentation.html
+```
+
