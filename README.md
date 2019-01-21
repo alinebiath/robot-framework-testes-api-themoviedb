@@ -5,17 +5,24 @@
 
 **Pre-conditions for the tests**
 - Get api_key by registering for the API
+- Clone the project
 - Install Python 2.7.15
 - An ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc)
 
 **Installing required Python libraries** </br> </br>
-With the pre-conditions satisfied, the libraries required to run the tests must be installed with command below:
+With the pre-conditions satisfied, the libraries required to run the tests must be installed. At the terminal, execute the command below:
 ```sh
 Windows
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 ```sh
 Linux / Mac
-sudo pip install -r requirements.txt
+$ sudo pip install -r requirements.txt
 ```
 This command will perform pip installation of what is required by the Robot Framework specified in the requirements.txt file
+
+**Running Robot Framework tests** </br> </br>
+```sh
+$ robot -L trace --variable VALID_API_KEY:c51f9deb0e83b37f5db774c5f239a34a -d output ./test-suites/guest-session.robot
+```
+For more details on running tests and their options see more: http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#executing-test-cases
