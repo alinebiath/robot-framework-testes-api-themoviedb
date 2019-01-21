@@ -1,6 +1,6 @@
 # Automated tests for "TheMovieDb" API with Robot Framework
 - Tests applied to The Movie Db API, available at https://developers.themoviedb.org/3/getting-started/introduction
-- It is necessary to register a user and the application according to documentation.
+- It is necessary to register an user and the application according to documentation.
 - The application register will generate an api_key, required to perform all API requests.
 
 ### Pre-conditions for the tests
