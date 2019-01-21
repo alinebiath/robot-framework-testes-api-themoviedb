@@ -7,7 +7,7 @@
 - Get api_key by registering for the API
 - Clone the project
 - Install Python 2.7.15
-- An ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc)</br></br> 
+- An ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc)</br>
 
 ### Installing required Python libraries
 With the pre-conditions satisfied, the libraries required to run the tests must be installed. At the terminal, execute the command below:
@@ -19,10 +19,10 @@ $ pip install -r requirements.txt
 Linux / Mac
 $ sudo pip install -r requirements.txt
 ```
-This command will perform pip installation of what is required by the Robot Framework specified in the <i>requirements.txt file</i>.</br></br>
+This command will perform pip installation of what is required by the Robot Framework specified in the <i>requirements.txt file</i>.</br>
 
 ### Running Robot Framework tests
-Execute at the terminal the command below. Note that you must replace the <b> your_api_key </ b> with the 32-character code provided by the API when you register your application.
+Execute at the terminal the command below. Note that you must replace the <b>your_api_key</b> with the 32-character code provided by the API when you register your application.
 ```sh
 $ robot --variable VALID_API_KEY:your_api_key -d output ./test-suites/guest-session.robot
 ```
