@@ -7,9 +7,9 @@
 - Get api_key by registering for the API
 - Clone the project
 - Install Python 2.7.15
-- An ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc)</br>
+- An ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc)</br></br> 
 
-**Installing required Python libraries** </br> 
+**Installing required Python libraries** 
 With the pre-conditions satisfied, the libraries required to run the tests must be installed. At the terminal, execute the command below:
 ```sh
 Windows
