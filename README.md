@@ -8,13 +8,15 @@
 - Install Python 2.7.15
 - An ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc)
 
-**Installing required Python libraries** 
+**Installing required Python libraries** </br>
 With the pre satisfied conditions, the libraries required to run the tests must be installed with command below:
 ```sh
 Windows
-pip install -r requirements.txt </br>
+pip install -r requirements.txt
 ```
+```sh
 Linux / Mac
 sudo pip install -r requirements.txt
+```
 
 
