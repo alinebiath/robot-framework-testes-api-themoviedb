@@ -4,12 +4,13 @@
 - The application register will generate an api_key, required to perform all API requests.
 
 **Pre-conditions for the tests**
+<hr>
 - Get api_key by registering for the API
 - Clone the project
 - Install Python 2.7.15
-- An ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc)
+- An ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc)</br>
 
-**Installing required Python libraries** </br> </br>
+**Installing required Python libraries** </br> 
 With the pre-conditions satisfied, the libraries required to run the tests must be installed. At the terminal, execute the command below:
 ```sh
 Windows
