@@ -21,7 +21,7 @@ $ sudo pip install -r requirements.txt
 ```
 This command will perform pip installation of what is required by the Robot Framework specified in the <i>requirements.txt file</i>.</br></br>
 
-**Running Robot Framework tests** </br> 
+### Running Robot Framework tests
 ```sh
 $ robot --variable VALID_API_KEY:your_api_key -d output ./test-suites/guest-session.robot
 ```
