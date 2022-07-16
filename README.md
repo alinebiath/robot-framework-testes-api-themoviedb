@@ -30,7 +30,7 @@ Este comando executará a instalação via <i>pip</i> do que é requerido pelo R
 
 ### 4. Executando os testes
 > O comando abaixo deve ser executado no terminal, no diretório raiz do projeto.
-A variável <b>"your_api_key"</b> deve ser alterada para a chave de 32 caracteres fornecido pela API ao registrar sua aplicação.
+Alterar o termo <b>"your_api_key"</b> pela chave de 32 caracteres fornecida pela API ao registrar sua aplicação. O valor será alterado na variável para realizar as requisições.
 ```sh
 $ python -m robot --variable VALID_API_KEY:your_api_key -d output ./test-suites/guest-session.robot
 ```
