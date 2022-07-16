@@ -1,24 +1,23 @@
-# Automated tests for "TheMovieDb" API with Robot Framework
-- Tests applied to The Movie Db API, available at https://developers.themoviedb.org/3/getting-started/introduction
-- Testing access to API as a guest and performing permitted operations and trying to perform non-permitted operations.
-- It is necessary to register an user and the application according to documentation: https://www.themoviedb.org/account/signup
-- The application register will generate an api_key, required to perform all API requests.
+# Testes automatizados com Robot Framework para API "TheMovieDb"
+- Testes para validar a API The Movie DB, disponível em https://developers.themoviedb.org/3/getting-started/introduction
+- Testando acesso à API como usuário convidado, para executar operações permitidas e não permitidas.
+- API exige registro de um usuário e geração de uma <i>api_key</i> para a aplicação, de acordo com a documentação acima.
+- A <i>api_key</i> será exigida em todas as requisições na API.
 
-### 1. Structure of tests
-The tests are structured in directories as follows:
-- **keywords**: contains <i>.robot</i> files with implementation keywords.
-- **test-suites**: contains the <i>.robot</i> file with test suites (scenarios or test cases).
-- **.gitignore**: ccontains files to be ignored by git.
-- **requirements.txt**: file containing the calls for installation of the robot framework and the necessary libraries.</br>
+### 1. Estrutura de arquivos e diretórios
+Os testes estão estruturados nos seguintes diretórios:
+- **keywords**: diretório que contém arquivos <i>.robot</i> com a implementação das palavras-chaves (keywords).
+- **test-suites**: diretório que contém arquivos <i>.robot</i> com as suítes de testes (cenários ou casos de testes).
+- **requirements.txt**: arquivo que contém as chamadas para instalação das libraries do robot que são necessárias para executar os testes.</br>
 
-### 2. Pre-conditions for the tests
-- Get api_key by registering for the API
-- Clone the project
-- Install Python 2.7.15
-- Use an ASCII editor of your preference (i.e. VSCode, Atom, RIDE, etc)</br>
+### 2. Pré condições para os testes
+- Obter a <i>api_key</i> registrando-se na API
+- Clonar este projeto
+- Python 2.7.15 ou superior
+- Usar um editor ASCII de sua preferência (VSCode, Atom, RIDE, etc)</br>
 
-### 3. Installing required Python libraries
-With the pre-conditions satisfied, the libraries required to run the tests must be installed. At the terminal, execute the command below:
+### 3. Instalando libraries Python necessárias
+Instale todas a libraries Python necessárias, digitando no terminal o comando:
 ```sh
 Windows
 $ pip install -r requirements.txt
@@ -27,23 +26,23 @@ $ pip install -r requirements.txt
 Linux / Mac
 $ sudo pip install -r requirements.txt
 ```
-This command will perform pip installation of what is required by the Robot Framework specified in the <i>requirements.txt file</i>.</br>
+Este comando executará a instalação via <i>pip</i> do que é requerido pelo Robot Framework, especificado no arquivo <i>requirements.txt file</i>.</br>
 
-### 4. Running Robot Framework tests
-Execute at the terminal the command below. Note that you must replace the <b>"your_api_key"</b> with the 32-character code provided by the API when you register your application.
+### 4. Executando os testes
+> O comando abaixo deve ser executado no terminal, no diretório raiz do projeto.
+A variável <b>"your_api_key"</b> deve ser alterada para a chave de 32 caracteres fornecido pela API ao registrar sua aplicação.
 ```sh
-$ robot --variable VALID_API_KEY:your_api_key -d output ./test-suites/guest-session.robot
+$ python -m robot --variable VALID_API_KEY:your_api_key -d output ./test-suites/guest-session.robot
 ```
-For more details on running tests in Robot Framework and their options see more: http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#executing-test-cases
+Para mais detalhes de como executar testes no Robot Framework veja mais em: http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#executing-test-cases
 
-### 5. Gererating documentation
-- Generate reports of your scenarios or users keywords with Robot.
+### 5. Gerando documentação
 
-- The following command generates the documentation of the user keywords in the output directory (or another of your preference):
+- O comando a seguir gera documentação das keywords do usuário no diretório output (ou outro de sua preferência):
 ```sh
 $ python -m robot.libdoc keywords/guest-session.robot output/user-keywords-documentation.html
 ```
-- The following command generates the documentation of the scenarios in the output directory (or another of your preference):
+- O comando a seguir gera a documentação dos cenários no diretório output (ou outro de sua preferência):
 ```sh
 $ python -m robot.testdoc test-suites/guest-session.robot output/test-suite-documentation.html
 ```
